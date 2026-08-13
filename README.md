@@ -10,7 +10,7 @@ Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
 | Parameter | Value |
 |---|---|
 | Chord, *c* | 1.0 m |
-| Freestream velocity, *U*∞ | 43.8 m/s |
+| Freestream velocity, *U* | 43.8 m/s |
 | Reynolds number, Re | 3×10⁶ |
 | Angle of attack, α | 8° |
 | Fluid | Air, ρ = 1.225 kg/m³, ν = 1.46×10⁻⁵ m²/s |
@@ -19,7 +19,7 @@ Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
 | Iterations to convergence | 87 |
 
 Angle of attack is imposed through the inlet velocity components
-(*Uₓ* = *U*∞ cos α, *U_y* = *U*∞ sin α) as opposed to rotating the geometry in Solidworks.
+(*U_x* = *U* cos α, *U_y* = *U* sin α) as opposed to rotating the geometry in Solidworks.
 
 **Boundary conditions**
 
