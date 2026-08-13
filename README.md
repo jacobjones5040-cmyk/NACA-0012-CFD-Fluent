@@ -69,22 +69,20 @@ von Doenhoff.
 
 Stagnation point at Cp ≈ +0.95 near the leading edge, with a suction peak of
 Cp ≈ −3.6 on the upper surface immediately aft of it. The two branches converge to
-Cp ≈ +0.1 at the trailing edge, consistent with the Kutta condition. The sharp
-leading-edge suction peak and gradual pressure recovery are characteristic of a
-symmetric section at moderate incidence, well below stall.
+Cp ≈ +0.1 at the trailing edge, consistent with the Kutta condition. 
 
 ### Flow field
 
-![Pressure contours](images/Pressure_contours.png)
-![Velocity contours](images/Velocity_contours_in_CFD_post.png)
-![Streamlines](images/Streamlines.png)
-![Turbulent kinetic energy](images/Turbulent_KE_contours_in_CFD_post.png)
+<img width="971" height="696" alt="Pressure contours" src="https://github.com/user-attachments/assets/c2b638d6-6429-4bc1-a559-d725ddeed6bd" />
+<img width="971" height="696" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/d255c770-85f2-4497-8e63-eb0ba356775e" />
+<img width="971" height="696" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/8bb4089a-219c-4f79-a8cf-5b9fe07abc18" />
+<img width="971" height="696" alt="Streamlines" src="https://github.com/user-attachments/assets/b244be41-9b5b-4c9f-9ee8-72e9207e9715" />
 
-Peak velocity of ≈ 84 m/s over the upper surface, close to twice freestream, coinciding
-with the low-pressure region driving the suction peak. Streamlines remain attached over
-the full chord — expected at 8°, since the NACA 0012 stalls at roughly 16° at this
-Reynolds number. Turbulent kinetic energy is confined to a thin boundary layer and a
-narrow wake, with no separation bubble.
+
+Peak velocity of ≈ 84 m/s over the upper surface, ≈ twice freestream, coinciding
+with the low-pressure region inducing the suction peak.
+Turbulent kinetic energy is confined to a thin boundary layer and a
+narrow wake.
 
 ---
 
