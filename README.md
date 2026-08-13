@@ -34,12 +34,11 @@ Angle of attack is imposed through the inlet velocity components
 <img width="1512" height="982" alt="Screenshot 2026-08-13 at 09 59 45" src="https://github.com/user-attachments/assets/450a90e4-d21f-4292-8428-3a135bf4a810" />
 
 
-Unstructured triangular mesh on a rectangular domain, with size-function refinement
-concentrated around the airfoil and its wake.
-
-- Cell count: `<TODO>`
-- Domain extent: `<TODO>` chords upstream / downstream / normal to chord
-- Wall *y*⁺ range: `<TODO>`
+Mesh was generated adaptive sizing. Sphere-of-influence around the aerofoil and
+in the wake, plus boundary-layer inflation from the aerofoil surface was used to refine the mesh and 
+exceed min orthogonal quality required by fluent (0.01)
+- Cells: 43,740
+- Orthogonal quality: min 0.0115, mean 0.939 (SD 0.088)
 
 ---
 
@@ -47,11 +46,11 @@ concentrated around the airfoil and its wake.
 
 ### Convergence
 
-![Lift coefficient convergence](images/Cl.png)
-![Drag coefficient convergence](images/Cd.png)
+<img width="1438" height="917" alt="Cl" src="https://github.com/user-attachments/assets/27755f89-ff71-44ed-b1da-7e258a1253c1" />
+<img width="1438" height="917" alt="Cd" src="https://github.com/user-attachments/assets/3d6f4b48-abc5-468c-bbef-d7df51ccd8cf" />
 
-Both force coefficients pass through a large transient over the first ~30 iterations —
-Cl dips briefly negative around iteration 27 — before settling. Cl is flat from roughly
+Both coefficients pass through a large transient over the first ~30 iterations,
+Cl dips briefly negative around iteration 27, before settling. Cl is flat from roughly
 iteration 60 onward; Cd from roughly iteration 50.
 
 | Coefficient | Simulated | Experimental (Re = 3×10⁶) | Difference |
