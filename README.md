@@ -61,12 +61,11 @@ iteration 60 onward; Cd from roughly iteration 50.
 | C_d | 0.0151 | ≈ 0.012 | ≈ +25% |
 
 Experimental values read from the NACA 0012 section characteristics in Abbott &
-von Doenhoff. Note that drag there is presented as a polar against C_l rather than
-against α, so C_d is read at the corresponding lift coefficient.
+von Doenhoff.
 
 ### Surface pressure distribution
 
-![Cp distribution along the airfoil](images/Pressure_Chart.png)
+<img width="700" height="500" alt="Pressure Chart" src="https://github.com/user-attachments/assets/8dfcdc9e-e796-4f78-97f7-74309a8ad462" />
 
 Stagnation point at Cp ≈ +0.95 near the leading edge, with a suction peak of
 Cp ≈ −3.6 on the upper surface immediately aft of it. The two branches converge to
