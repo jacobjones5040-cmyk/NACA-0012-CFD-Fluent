@@ -1,3 +1,6 @@
+Note: These points do not form a closed loop, near the trailing edge it terminates,
+and in Solidworks the gap is closed with a tangent arc - modelling a blunt trailing edge
+
 1.000000000	0.001260000	0.000000000
 0.999937695	0.001268742	0.000000000
 0.999750795	0.001294961	0.000000000
