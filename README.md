@@ -73,10 +73,10 @@ Cp ≈ +0.1 at the trailing edge, consistent with the Kutta condition.
 
 ### Flow field
 
-<img width="971" height="696" alt="Pressure contours" src="https://github.com/user-attachments/assets/c2b638d6-6429-4bc1-a559-d725ddeed6bd" />
-<img width="971" height="696" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/d255c770-85f2-4497-8e63-eb0ba356775e" />
-<img width="971" height="696" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/8bb4089a-219c-4f79-a8cf-5b9fe07abc18" />
-<img width="971" height="696" alt="Streamlines" src="https://github.com/user-attachments/assets/b244be41-9b5b-4c9f-9ee8-72e9207e9715" />
+<img width="700" height="500" alt="Pressure contours" src="https://github.com/user-attachments/assets/c2b638d6-6429-4bc1-a559-d725ddeed6bd" />
+<img width="700" height="500" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/d255c770-85f2-4497-8e63-eb0ba356775e" />
+<img width="700" height="500" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/8bb4089a-219c-4f79-a8cf-5b9fe07abc18" />
+<img width="700" height="500" alt="Streamlines" src="https://github.com/user-attachments/assets/b244be41-9b5b-4c9f-9ee8-72e9207e9715" />
 
 
 Peak velocity of ≈ 84 m/s over the upper surface, ≈ twice freestream, coinciding
@@ -88,76 +88,37 @@ narrow wake.
 
 ## Discussion
 
-Lift agreement is good. Drag is over-predicted by roughly 25%, and the likely cause is
-the fully-turbulent treatment: the model applies turbulent boundary-layer behaviour from
-the leading edge, whereas at Re = 3×10⁶ the physical airfoil sustains laminar flow over
-a substantial fraction of the forward chord. Since laminar skin friction is markedly
-lower than turbulent, integrating a fully-turbulent boundary layer over the whole surface
-inflates the friction drag component.
+Lift agreement is sufficient. Drag is over-predicted by roughly 25%, and the likely cause is
+the fully-turbulent treatment. The model applies turbulent boundary-layer behaviour from
+the leading edge, whereas at Re = 3×10⁶ the flow past the aerofoil is laminar over
+a substantial fraction of the forward chord.
 
-This also explains why lift is less affected than drag. Lift at moderate incidence is
-dominated by the pressure distribution, which is set largely by the outer inviscid flow
-and is comparatively insensitive to boundary-layer detail. Drag at this Reynolds number
-is friction-dominated, so it inherits the error directly.
+This would also explain why lift is less affected than drag. The lift is
+dominated by the pressure distribution.
 
 ---
 
 ## Limitations
 
-Stated plainly, since they bound what the results can be used for:
 
-- **Single mesh.** No grid refinement study was performed, so the discretisation error
-  is unquantified and the results are not demonstrated to be mesh-independent.
-- **No inflation layer.** The mesh is pure triangular with no structured near-wall
-  layers, so *y*⁺ is uncontrolled and the boundary layer is resolved by whatever the
-  local cell size happens to give.
-- **Fully turbulent.** No transition model, for the reasons above.
-- **Short run.** 87 iterations is few for a steady RANS case; the force monitors are
-  flat but residual levels should be confirmed before treating this as converged.
-- **Single operating point.** One angle of attack, so no lift curve or drag polar.
+- **Results generated for a single mesh.** No grid refinement study was performed,
+- the results are not demonstrated to be mesh-independent.
+- **Fully turbulent.** Model doesn't capture laminar nature of flow around leading edge.
+- **Short run.** 87 iterations is few for a steady RANS case. The convergence tolerance was set to
+- default so to improve accuracy, the simulation can be rerun with a tolerance of around 1e-6.
+
 
 ---
 
-## Next steps
-
-1. Grid refinement study across three or more systematically refined meshes, tracking
-   C_d and reporting a Grid Convergence Index.
-2. Add a boundary-layer inflation layer targeting *y*⁺ ≈ 1, and record *y*⁺ per mesh.
-3. Sweep α from −4° to 16° to produce a lift curve and drag polar, and compare the
-   predicted stall angle against experiment.
-4. Compare turbulence models at fixed mesh against the NASA Turbulence Modeling
-   Resource reference values.
-5. Test a transition-sensitive model (γ–Re_θ) to see whether the drag over-prediction
-   closes.
-
----
-
-## Repository contents
-
-```
-├── images/          Contours, streamlines, convergence and Cp plots
-├── journals/        Fluent journal file for solver setup
-├── post/            CFD-Post session file
-├── data/            Exported Cp distribution and force coefficient histories
-└── README.md
-```
-
-Fluent case, data and mesh files are excluded — they exceed GitHub's file size limits.
-The journal file reproduces the solver setup from a meshed geometry.
 
 ---
 
 ## Tools
 
-ANSYS Fluent 2026 R1 (Student), ANSYS Meshing, CFD-Post
+Solidworks, ANSYS Fluent 2026 R1, ANSYS Meshing, CFD-Post Processing
 
 ## References
 
-Abbott, I.H. and von Doenhoff, A.E. (1959). *Theory of Wing Sections*. Dover.
+Abbott, I.H. and von Doenhoff, A.E. (1959). *Theory of Wing Sections*. 
 
-Ladson, C.L. (1988). *Effects of Independent Variation of Mach and Reynolds Numbers on
-the Low-Speed Aerodynamic Characteristics of the NACA 0012 Airfoil Section*.
-NASA TM 4074.
 
-NASA Langley Turbulence Modeling Resource — 2D NACA 0012 Airfoil Validation Case.
-https://turbmodels.larc.nasa.gov/naca0012_val.html
