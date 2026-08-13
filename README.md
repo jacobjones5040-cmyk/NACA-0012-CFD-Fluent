@@ -55,7 +55,7 @@ iteration 60 onward; Cd from roughly iteration 50.
 
 | Coefficient | Simulated | Experimental (Re = 3×10⁶) | Difference |
 |---|---|---|---|
-| C_l | 0.840 | ≈ 0.84–0.88 | 1–7% |
+| C_l | 0.840 | ≈ 0.85–0.90 | 1–7% |
 | C_d | 0.0151 | ≈ 0.012 | ≈ +25% |
 
 Experimental values read from the NACA 0012 section characteristics in Abbott &
