@@ -1,4 +1,4 @@
-# NACA 0012 Airfoil — 2D RANS Simulation in ANSYS Fluent
+# NACA 0012 Airfoil -- 2D RANS Simulation in ANSYS Fluent
 
 Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
 α = 8°, with lift and drag coefficients validated against published experimental data.
