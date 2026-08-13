@@ -35,9 +35,7 @@ Angle of attack is imposed through the inlet velocity components
 
 
 Mesh was generated adaptive sizing. Sphere-of-influence around the aerofoil and
-in the wake, plus boundary-layer inflation from the aerofoil surface was used to refine the mesh and 
-exceed min orthogonal quality required by fluent (0.01)
-- Cells: 43,740
+in the wake, plus boundary-layer inflation from the aerofoil surface was used to refine the mesh.
 - Orthogonal quality: min 0.0115, mean 0.939 (SD 0.088)
 
 ---
