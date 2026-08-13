@@ -31,7 +31,7 @@ Angle of attack is imposed through the inlet velocity components
 
 ## Mesh
 
-<img width="1512" height="982" alt="Screenshot 2026-08-13 at 09 59 45" src="https://github.com/user-attachments/assets/450a90e4-d21f-4292-8428-3a135bf4a810" />
+<img width="1000" height="982" alt="Screenshot 2026-08-13 at 09 59 45" src="https://github.com/user-attachments/assets/450a90e4-d21f-4292-8428-3a135bf4a810" />
 
 
 Mesh was generated adaptive sizing. Sphere-of-influence around the aerofoil and
@@ -46,8 +46,10 @@ exceed min orthogonal quality required by fluent (0.01)
 
 ### Convergence
 
-<img width="1438" height="917" alt="Cl" src="https://github.com/user-attachments/assets/27755f89-ff71-44ed-b1da-7e258a1253c1" />
-<img width="1438" height="917" alt="Cd" src="https://github.com/user-attachments/assets/3d6f4b48-abc5-468c-bbef-d7df51ccd8cf" />
+<img width="700" height="917" alt="Cl" src="https://github.com/user-attachments/assets/27755f89-ff71-44ed-b1da-7e258a1253c1" />
+
+
+<img width="700" height="917" alt="Cd" src="https://github.com/user-attachments/assets/3d6f4b48-abc5-468c-bbef-d7df51ccd8cf" />
 
 Both coefficients pass through a large transient over the first ~30 iterations,
 Cl dips briefly negative around iteration 27, before settling. Cl is flat from roughly
