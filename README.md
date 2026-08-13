@@ -25,13 +25,14 @@ Angle of attack is imposed through the inlet velocity components
 
 - Velocity inlet — left, upper and lower domain boundaries
 - Pressure outlet — right boundary
-- No-slip wall — airfoil surface
+- No-slip wall — airfoil profile
 
 ---
 
 ## Mesh
 
-![Mesh and boundary conditions](images/Mesh.png)
+<img width="1512" height="982" alt="Screenshot 2026-08-13 at 09 59 45" src="https://github.com/user-attachments/assets/450a90e4-d21f-4292-8428-3a135bf4a810" />
+
 
 Unstructured triangular mesh on a rectangular domain, with size-function refinement
 concentrated around the airfoil and its wake.
