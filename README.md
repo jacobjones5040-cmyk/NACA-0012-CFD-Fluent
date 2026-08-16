@@ -23,9 +23,9 @@ Angle of attack is imposed through the inlet velocity components
 
 **Boundary conditions**
 
-- Velocity inlet — left, upper and lower domain boundaries
-- Pressure outlet — right boundary
-- No-slip wall — airfoil profile
+- Velocity inlet: left, upper and lower domain boundaries
+- Pressure outlet: right boundary
+- No-slip wall: airfoil profile
 
 ---
 
@@ -72,8 +72,14 @@ Cp ≈ +0.1 at the trailing edge, consistent with the Kutta condition.
 ### Flow field
 
 <img width="700" height="500" alt="Pressure contours" src="https://github.com/user-attachments/assets/c2b638d6-6429-4bc1-a559-d725ddeed6bd" />
+
+
 <img width="700" height="500" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/d255c770-85f2-4497-8e63-eb0ba356775e" />
+
+
 <img width="700" height="500" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/8bb4089a-219c-4f79-a8cf-5b9fe07abc18" />
+
+
 <img width="700" height="500" alt="Streamlines" src="https://github.com/user-attachments/assets/b244be41-9b5b-4c9f-9ee8-72e9207e9715" />
 
 
