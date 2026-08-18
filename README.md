@@ -5,7 +5,7 @@ Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
 
 ---
 
-## Case setup
+## Base Case
 
 | Parameter | Value |
 |---|---|
@@ -18,7 +18,7 @@ Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
 | Turbulence model | SST k-ω |
 | Iterations to convergence | 87 |
 
-Angle of attack is imposed through the inlet velocity components
+Angle of attack is introduced through the inlet velocity components
 (*U_x* = *U* cos α, *U_y* = *U* sin α) as opposed to rotating the geometry in Solidworks.
 
 **Boundary conditions**
@@ -60,6 +60,13 @@ iteration 60 onward; Cd from roughly iteration 50.
 
 Experimental values read from the NACA 0012 section characteristics in Abbott &
 von Doenhoff.
+
+### Changing Flow Domain to 50c x 50c to Observe Dependence on Domain
+
+
+### Refined 50c x 50c Mesh
+![Uploading Screenshot 2026-08-17 at 14.36.26.png…]()
+
 
 ### Surface pressure distribution
 
