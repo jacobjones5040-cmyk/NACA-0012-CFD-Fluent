@@ -1,4 +1,4 @@
-<img width="1512" height="982" alt="Screenshot 2026-08-17 at 14 36 26" src="https://github.com/user-attachments/assets/d5377299-a983-4c6b-b52a-efb011141695" /># NACA 0012 Airfoil: 2D RANS Simulation in ANSYS Fluent
+# NACA 0012 Airfoil: 2D RANS Simulation in ANSYS Fluent
 
 Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
 α = 8°, with lift and drag coefficients validated against published experimental data.
@@ -65,7 +65,7 @@ von Doenhoff.
 
 
 ### Refined 50c x 50c Mesh
-
+<img width="1512" height="982" alt="Screenshot 2026-08-17 at 14 36 26" src="https://github.com/user-attachments/assets/d5377299-a983-4c6b-b52a-efb011141695" />
 
 
 
