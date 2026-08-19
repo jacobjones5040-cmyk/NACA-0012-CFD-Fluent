@@ -63,12 +63,20 @@ von Doenhoff.
 
 ### Changing Flow Domain to 50c x 50c to Observe Dependence on Domain
 
+| Coefficient | Simulated | Experimental (Re = 3×10⁶) |
+|---|---|---|
+| C_l | 0.8934 | ≈ 0.85–0.90 | 
+| C_d | 0.0192 | ≈ 0.012 | 
 
 ### Refined 50c x 50c Mesh
 <img width="1512" height="982" alt="Screenshot 2026-08-17 at 14 36 26" src="https://github.com/user-attachments/assets/d5377299-a983-4c6b-b52a-efb011141695" />
 
+| Coefficient | Simulated | Experimental (Re = 3×10⁶) |
+|---|---|---|
+| C_l | 0.8955 | ≈ 0.85–0.90 | 
+| C_d | 0.0186 | ≈ 0.012 | 
 
-
+Extending the domain increased C_d from 0.0128 to 0.0186, moving further from the experimental value. The reason for this is likely that the smaller domain places the pressure outlet inside the wake, thereby raising base pressure and suppressing pressure drag. This suppression partly offset the over-prediction inherent in the base case, so the closer agreement was coincidental. 
 ### Surface pressure distribution
 
 <img width="700" height="500" alt="Pressure Chart" src="https://github.com/user-attachments/assets/8dfcdc9e-e796-4f78-97f7-74309a8ad462" />
