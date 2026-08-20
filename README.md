@@ -80,12 +80,17 @@ Extending the domain increased C_d from 0.0128 to 0.0186, moving further from th
 
 
 ## Velocity Contours
+
 <img width="571" height="496" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/15dcec63-253b-4f03-9a65-fe44c4f576cf" />
+
 ## Turbulent Kinetic Energy Contours
+
 <img width="571" height="496" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/809f0b2a-bef7-4361-b565-714426f8e3ea" />
 ## Streamlines
+
 <img width="571" height="496" alt="Streamlines" src="https://github.com/user-attachments/assets/4ea9a6bf-3c1e-4587-99e5-7675e5aa97a8" />
 ## Pressure Contours
+
 <img width="571" height="496" alt="Pressure contours" src="https://github.com/user-attachments/assets/99b0f918-5a10-4c27-b4b5-2198d93da735" />
 
 
