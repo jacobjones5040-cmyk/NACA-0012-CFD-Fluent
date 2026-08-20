@@ -104,6 +104,18 @@ narrow wake.
 
 ---
 
+## Y+ Value
+<img width="530" height="415" alt="Contours of y+ at 8 degrees incidence" src="https://github.com/user-attachments/assets/6dfe30a1-5803-4265-baa8-0c4e31ed1eb1" />
+The y⁺ value determines whether the near-wall flow is
+being resolved directly or approximated by a wall function, and thus governs how much
+of the boundary layer the solver is actually computing.
+Across the aerofoil surface the maximum is 1.64 and the minimum 0.21, so the viscous sub-layer is sufficiently resolved.
+This result matters for interpreting the drag discrepancy discussed below. Because
+the boundary layer is resolved rather than modelled, near-wall under-resolution can
+be ruled out as a contributor, which isolates the fully-turbulent assumption as the
+dominant remaining source of error
+
+
 ### Changing Angle of Attack
 
 In this section, I re-ran the simulation, altering the angle of attack to 6 degrees and 10 degrees and I obtained the following results:
