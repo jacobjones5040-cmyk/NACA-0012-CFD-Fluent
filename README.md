@@ -95,6 +95,16 @@ narrow wake.
 
 ---
 
+### Changing Angle of Attack
+
+Here I re-ran the simulation, altering the angle of attack to 6 degrees and 10 degrees and Iobtained the following results:
+
+| alpha | C_l | C_d |
+|---|---|---|
+| 6 |	0.6977 | 0.0153 |
+| 10 |	1.0543 | 0.0246 |
+
+
 ## Discussion
 
 Lift agreement is sufficient. Drag is over-predicted by roughly 25%, and the likely cause is
