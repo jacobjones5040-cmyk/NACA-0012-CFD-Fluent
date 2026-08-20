@@ -1,3 +1,4 @@
+
 # NACA 0012 Airfoil: 2D RANS Simulation in ANSYS Fluent
 
 Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
@@ -77,26 +78,14 @@ von Doenhoff.
 | C_d | 0.0186 | ≈ 0.012 | 
 
 Extending the domain increased C_d from 0.0128 to 0.0186, moving further from the experimental value. The reason for this is likely that the smaller domain places the pressure outlet inside the wake, thereby raising base pressure and suppressing pressure drag. This suppression partly offset the over-prediction inherent in the base case, so the closer agreement was coincidental. 
-### Surface pressure distribution
 
-<img width="700" height="500" alt="Pressure Chart" src="https://github.com/user-attachments/assets/8dfcdc9e-e796-4f78-97f7-74309a8ad462" />
-
-Stagnation point at Cp ≈ +0.95 near the leading edge, with a suction peak of
-Cp ≈ −3.6 on the upper surface immediately aft of it. The two branches converge to
-Cp ≈ +0.1 at the trailing edge, consistent with the Kutta condition. 
 
 ### Flow field
+<img width="571" height="496" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/15dcec63-253b-4f03-9a65-fe44c4f576cf" />
+<img width="571" height="496" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/809f0b2a-bef7-4361-b565-714426f8e3ea" />
+<img width="571" height="496" alt="Streamlines" src="https://github.com/user-attachments/assets/4ea9a6bf-3c1e-4587-99e5-7675e5aa97a8" />
+<img width="571" height="496" alt="Pressure contours" src="https://github.com/user-attachments/assets/99b0f918-5a10-4c27-b4b5-2198d93da735" />
 
-<img width="700" height="500" alt="Pressure contours" src="https://github.com/user-attachments/assets/c2b638d6-6429-4bc1-a559-d725ddeed6bd" />
-
-
-<img width="700" height="500" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/d255c770-85f2-4497-8e63-eb0ba356775e" />
-
-
-<img width="700" height="500" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/8bb4089a-219c-4f79-a8cf-5b9fe07abc18" />
-
-
-<img width="700" height="500" alt="Streamlines" src="https://github.com/user-attachments/assets/b244be41-9b5b-4c9f-9ee8-72e9207e9715" />
 
 
 Peak velocity of ≈ 84 m/s over the upper surface, ≈ twice freestream, coinciding
