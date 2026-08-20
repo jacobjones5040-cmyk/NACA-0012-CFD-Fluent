@@ -1,4 +1,4 @@
-
+[C_p 10 deg.csv](https://github.com/user-attachments/files/31243899/C_p.10.deg.csv)
 # NACA 0012 Airfoil: 2D RANS Simulation in ANSYS Fluent
 
 Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
@@ -97,12 +97,31 @@ narrow wake.
 
 ### Changing Angle of Attack
 
-Here I re-ran the simulation, altering the angle of attack to 6 degrees and 10 degrees and Iobtained the following results:
+In this section, I re-ran the simulation, altering the angle of attack to 6 degrees and 10 degrees and I obtained the following results:
 
 | alpha | C_l | C_d |
 |---|---|---|
 | 6 |	0.6977 | 0.0153 |
 | 10 |	1.0543 | 0.0246 |
+
+# Coefficients of Pressure
+<img width="500" height="500" alt="pressure_coeffs_inv" src="https://github.com/user-attachments/assets/6bda320f-f15f-430a-88d3-935485aaab14" />
+
+The suction peak deepens from Cp ≈ −2.5 at 6° to −3.8 at 8° and −4.8 at 10°,
+and moves forward toward the leading edge as incidence increases. All three
+curves converge to Cp ≈ +0.1 at the trailing edge, consistent with the Kutta
+condition being satisfied at each angle.
+
+The area enclosed between the upper and lower surface curves is proportional
+to the sectional lift, and grows with incidence in line with the computed C_l.
+
+The upper surface shows an adverse pressure gradient over essentially the
+entire chord aft of the suction peak, steepening with angle of attack. The
+lower surface accelerates from the stagnation point over the forward 15–20%
+before flattening. This asymmetry explains why transition would occur far
+earlier on the suction side in the physical flow — and, since the simulation
+is fully turbulent from the leading edge, why the drag over-prediction is
+attributable primarily to the suction surface.
 
 
 ## Discussion
@@ -117,20 +136,10 @@ dominated by the pressure distribution.
 
 ---
 
-## Limitations
 
 
-- **Results generated for a single mesh.** No grid refinement study was performed,
-- the results are not demonstrated to be mesh-independent.
-- **Fully turbulent.** Model doesn't capture laminar nature of flow around leading edge.
-- **Short run.** 87 iterations is few for a steady RANS case. The convergence tolerance was set to
-- default so to improve accuracy, the simulation can be rerun with a tolerance of around 1e-6.
 
 
----
-
-
----
 
 ## Tools
 
