@@ -105,7 +105,10 @@ narrow wake.
 ---
 
 ## Y+ Value
+
 <img width="530" height="415" alt="Contours of y+ at 8 degrees incidence" src="https://github.com/user-attachments/assets/6dfe30a1-5803-4265-baa8-0c4e31ed1eb1" />
+
+
 The y⁺ value determines whether the near-wall flow is
 being resolved directly or approximated by a wall function, and thus governs how much
 of the boundary layer the solver is actually computing.
