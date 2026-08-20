@@ -1,4 +1,3 @@
-[C_p 10 deg.csv](https://github.com/user-attachments/files/31243899/C_p.10.deg.csv)
 # NACA 0012 Airfoil: 2D RANS Simulation in ANSYS Fluent
 
 Steady-state CFD analysis of flow over a NACA 0012 airfoil at Re = 3×10⁶,
@@ -80,10 +79,13 @@ von Doenhoff.
 Extending the domain increased C_d from 0.0128 to 0.0186, moving further from the experimental value. The reason for this is likely that the smaller domain places the pressure outlet inside the wake, thereby raising base pressure and suppressing pressure drag. This suppression partly offset the over-prediction inherent in the base case, so the closer agreement was coincidental. 
 
 
-### Flow field
+## Velocity Contours
 <img width="571" height="496" alt="Velocity contours in CFD post" src="https://github.com/user-attachments/assets/15dcec63-253b-4f03-9a65-fe44c4f576cf" />
+## Turbulent Kinetic Energy Contours
 <img width="571" height="496" alt="Turbulent KE contours in CFD post" src="https://github.com/user-attachments/assets/809f0b2a-bef7-4361-b565-714426f8e3ea" />
+## Streamlines
 <img width="571" height="496" alt="Streamlines" src="https://github.com/user-attachments/assets/4ea9a6bf-3c1e-4587-99e5-7675e5aa97a8" />
+## Pressure Contours
 <img width="571" height="496" alt="Pressure contours" src="https://github.com/user-attachments/assets/99b0f918-5a10-4c27-b4b5-2198d93da735" />
 
 
@@ -113,26 +115,25 @@ curves converge to Cp ≈ +0.1 at the trailing edge, consistent with the Kutta
 condition being satisfied at each angle.
 
 The area enclosed between the upper and lower surface curves is proportional
-to the sectional lift, and grows with incidence in line with the computed C_l.
+to the lift, and grows with the angle of incidence in line with the computed C_l.
 
-The upper surface shows an adverse pressure gradient over essentially the
-entire chord aft of the suction peak, steepening with angle of attack. The
-lower surface accelerates from the stagnation point over the forward 15–20%
-before flattening. This asymmetry explains why transition would occur far
-earlier on the suction side in the physical flow — and, since the simulation
-is fully turbulent from the leading edge, why the drag over-prediction is
-attributable primarily to the suction surface.
+
 
 
 ## Discussion
 
-Lift agreement is sufficient. Drag is over-predicted by roughly 25%, and the likely cause is
-the fully-turbulent treatment. The model applies turbulent boundary-layer behaviour from
-the leading edge, whereas at Re = 3×10⁶ the flow past the aerofoil is laminar over
-a substantial fraction of the forward chord.
+#Drag and Lift
 
-This would also explain why lift is less affected than drag. The lift is
-dominated by the pressure distribution.
+Predicted lift coefficient agrees well with published section data throughout. At 8° the computed C_l = 0.8955 falls within the experimental band of approximately 0.85–0.90 for this section at Re = 3×10⁶.
+Drag is over-predicted by approximately 40% against experiment, and this is likely due to the fact that the simulation applies the SST k-ω model without a transition model and is therefore fully turbulent from the leading edge.
+That assumption is the primary source of the discrepancy. At Re = 3×10⁶ the physical boundary layer remains laminar over a significant portion of the forward chord, particularly on the pressure surface. Laminar skin friction is significantly lower than turbulent, so imposing turbulent behaviour from the stagnation point inflates the friction drag component by a non-negligible amount.
+Lift is far less affected because, at moderate incidence, it is set primarily by the outer pressure distribution, which is comparatively insensitive to boundary-layer detail.
+
+
+Mesh sensitivity
+
+Two meshes differing only in refinement level were compared on the 50c × 50c domain at 8°. C_l changed by 0.2% and C_d by 3%, indicating that the solution is approaching mesh independence.
+
 
 ---
 
